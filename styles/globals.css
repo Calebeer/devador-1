@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  /* margin: 15px 0; */
+  /* line-height: 1.8; */
+}
+
+.post-description {
+  text-align: justify;
+  padding-left: 15px;
+}
+
+.card-content { 
+  padding: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+header {
+  background: #a8002c;
+  color: #fff;
+  padding: 8px;
+  /* margin-bottom: 40px; */
+}
+
+header a {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    min-width: 100%;
+    margin: auto;
+    overflow: auto;
+    /* padding: 0 10px; */
+  }
+
+  .card-avatar-container {
+    display: flex;
+    flex-direction: column;
+    height: auto !important;
+    margin: 1rem 0 !important;
+  }
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  overflow: auto;
+  /* padding: 0 10px; */
+}
+
+.btn {
+  display: inline-block;
+  background: steelblue;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btn-back {
+  background: #f4f4f4;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+ul {
+  padding-left: 40px;
+}
+
+p {
+  padding-left: 15px;
+}
+
+.footer {
+  margin-top: 50px;
+  /* margin: 0px; */
+  background: #f4f4f4;
+  /* padding: 20px; */
+  padding-top: 30px;
+  padding-bottom: 35px;
+  /* margin-left: 0px; */
+  /* margin-right: 0px; */
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.post-title {
+  /* margin: 10px 0; */
+}
+
+.post-date {
+  background: #f4f4f4;
+  margin-top: 0px;
+  text-align: center;
+  /* margin-bottom: 20px; */
+  /* padding: 3px 10px; */
+}
+
+.post-body ul,
+ol {
+  font-size: 110%;
+  line-height: 2.3;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.post-body pre {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 20px 0;
+  line-height: 2.3;
+}
+
+@media (max-width: 500px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+.cover-image {
+  width: 40%;
+}
+
+.cursor {
+  cursor: pointer;
+}
+.tag {
+  background: #caa4ae;
+}
+
+.img-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 0.3rem 0 0;
+  border-radius: 0 !important;
+}
+
+.di {
+  background-color: red;
+}
+
+.gif-md {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3%;
+}
+
+@media (max-width: 500px) {
+  .gif-md {
+    width: 90%;
+    border-radius: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .cover-image {
+    border-radius: 3%;
+    width: 90%;
+  }
+}
+
+.card-avatar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15rem;
+}
+
+.card-avatar {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+}
+
+.card-avatar-img {
+  position: relative;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 9%;
+}
+
+.card-avatar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 5px;
+  /* width: 15%; */
+  /* height: 200px; */
+  background: white;
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: center; */
+  border-radius: 5%;
+}
+
+.card-page {
+  /* padding: 15px 30px; */
+}
+
+.display-cursor {
+  cursor: pointer;
+}
+
+.card-blog {
+  margin-bottom: 30px;
+  /* padding: 10px; */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 2px;
+  margin-top: 20px;
+  border-radius: 20px;
+  /* box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 2); */
+}
+
+.p3 {
+  padding: 20px;
+}
+
+.mb3 {
+  margin-bottom: 30px;
+}
+
+img {
+  width:  350px;
+  height: 250px;
+  border-radius: 3px;
+}
